@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  flex: 0;
+  padding: 1.5rem 2rem;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map {
+  position: relative;
+}
+
+.map > div {
+  position: relative;
+  width: 1660px;
+  height: 1080px;
+}
+
+.footer {
+  flex: 0;
+  padding: 2rem;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.placeholder {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
