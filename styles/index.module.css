@@ -21,16 +21,6 @@
   justify-content: center;
 }
 
-.map {
-  position: relative;
-}
-
-.map > div {
-  position: relative;
-  width: 1660px;
-  height: 1080px;
-}
-
 .footer {
   flex: 0;
   padding: 2rem;

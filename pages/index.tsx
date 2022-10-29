@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
 
 import styles from '../styles/index.module.css';
 
 const RobotStatus = dynamic(() => import('../components/RobotStatus'), { ssr: false });
-const RobotIcon = dynamic(() => import('../components/RobotIcon'), { ssr: false });
 
 const Home = () => {
   return (
@@ -21,12 +19,6 @@ const Home = () => {
       </header>
 
       <main className={ styles.main }>
-        <div className={ styles.map }>
-          <RobotIcon />
-          <div>
-            <Image src="/images/map.png" layout="fill" objectFit="contain" alt="map for the robot" />
-          </div>
-        </div>
         <RobotStatus />
       </main>
 

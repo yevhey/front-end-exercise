@@ -2,6 +2,7 @@ import styles from './RobotStatus.module.css';
 
 import { useCallback, useState } from 'react';
 
+import Map from './Map';
 import { getPoseStream, useStream, PosePayload, getPausedStream } from '../lib/stream';
 
 const RobotStatus = () => {
@@ -47,11 +48,14 @@ const RobotStatus = () => {
 
   // Component content
   return (
-    <div className={ styles.container }>
-      { status }
-      { poseValue }
-      { pauseButton }
-    </div>
+    <>
+      <div className={ styles.container }>
+        { status }
+        { poseValue }
+        { pauseButton }
+      </div>
+      <Map />
+    </>
   );
 };
 

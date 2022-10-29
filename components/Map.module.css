@@ -1,0 +1,9 @@
+.map {
+  position: relative;
+}
+
+.map > div {
+  position: relative;
+  width: 1660px;
+  height: 1080px;
+}
